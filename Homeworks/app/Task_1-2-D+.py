@@ -19,7 +19,7 @@ my_favorite_songs_dict = {
     'In This World': 4.02,
 }
 
-# Выводим выбранные песни и их длительность на экран
+# Выводим выбранные песни и их длительность на консоль
 for song, duration in my_favorite_songs_dict.items():
     minutes = int(duration)
     seconds = int((duration - minutes) * 60)

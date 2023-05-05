@@ -22,7 +22,7 @@ my_favorite_songs_dict = {
 # и получаем результат уже в виде списка
 random_songs = random.sample(list(my_favorite_songs_dict.items()), k=3)
 
-# Выводим выбранные песни и их длительность на экран
+# Выводим выбранные песни и их длительность на консоль
 print(f"Выбраны песни:")
 for song in random_songs:
     print(song[0], song[1])
