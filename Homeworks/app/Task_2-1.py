@@ -30,9 +30,10 @@ def maximum(arr):
             max_number = number # то назначаем его наибольшим
     return max_number
 
-# Примеры использования
+# Например:
 num = [4,6,2,1,9,63,-134,566]
 print(f"max = {maximum(num)}, min = {minimum(num)}")
+
 # Результат: 
 # max = 566, min = -134
 

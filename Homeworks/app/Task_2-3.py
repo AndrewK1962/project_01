@@ -23,7 +23,7 @@ def switch_it_up(number):
 
     return digits_dict.get(number, 'Такой цифры нет, это уже число')
 
-# Пример использования
+# Например:
 number = int(input("Введите цифру от 0 до 9: "))
 
 # цифра прописью
@@ -31,8 +31,7 @@ number_in_words = switch_it_up(number)
 
 print(number_in_words)
 
-
-# Результаты выполнения программы:
+# Результат:
 
 # Введите цифру от 0 до 9: 7
 # семь
