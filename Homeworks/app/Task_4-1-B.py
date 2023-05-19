@@ -33,7 +33,7 @@ print(get_student_info(201),'\n')
 print(get_student_info(205),'\n')
 print(get_student_info(777),'\n')  # несуществующий ID
 
-# Закрываем подключение к базе данных
+# Закрываем соединение с базой данных
 conn.close()
 
 # Результат:
