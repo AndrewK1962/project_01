@@ -17,6 +17,8 @@
 # По смыслу базы School_Id не может быть Primary key, 
 # тогда в базе может быть только 1 ученик из каждой школы.
 # Primary key должен быть Student_Id
+# кроме того, Student_Id не может быть пустым, он обязателен.
+# да и все остальные данные не должны быть пустыми.
 
 import sqlite3 # подключаем модуль sqlite3
 
@@ -25,9 +27,9 @@ conn = sqlite3.connect(r'C:\Users\Andrew.Kalashnikov\Desktop\project_01\Homework
 
 # В базе данных teachers.db Создаем таблицу Students
 conn.execute('''CREATE TABLE IF NOT EXISTS Students
-             (Student_Id INTEGER PRIMARY KEY,
-             Student_Name TEXT,
-             School_Id INTEGER);''')
+             (Student_Id INTEGER NOT NULL PRIMARY KEY,
+             Student_Name TEXT NOT NULL,
+             School_Id INTEGER NOT NULL);''')
 
 # Заполняем таблицу Students данными по списку
 students_data = [
