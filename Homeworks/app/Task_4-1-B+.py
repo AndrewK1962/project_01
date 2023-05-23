@@ -25,6 +25,7 @@ def get_student_info(student_id):
     """, (student_id,))
     
     # Если студент с таким ID найден, выводим информацию о нем и его школе
+    # иначе, выводим "Студент не найден."
     student_data = cursor.fetchone()
     if student_data:
         print("ID Студента:", student_data[0])
