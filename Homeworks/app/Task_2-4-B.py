@@ -9,7 +9,7 @@
 #     pass
 
 
-def remove_exclamation_mark(input_string):
+def remove_last_em(input_string):
     if input_string.endswith('!'): 
     # endswith проверяет, заканчивается ли строка на заданный символ или подстроку
         input_string = input_string[:-1] 
@@ -18,12 +18,18 @@ def remove_exclamation_mark(input_string):
 
 # Например:
 input_string = input("Введите строку: ")
-new_string = remove_exclamation_mark(input_string)
+new_string = remove_last_em(input_string)
 
 print(new_string)
 
 
 # Результат:
 
-# Введите строку: Hello World!
-# Hello World
+# Введите строку: Hi!
+# Hi
+
+# Введите строку: Hi!!!
+# Hi!!
+
+# Введите строку: !Hi
+# !Hi

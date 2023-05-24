@@ -23,5 +23,8 @@ print(new_string)
 
 # Результат:
 
-# Введите строку: Hello World!
-# Hello World
+# Введите строку: Hi! Hello!
+# Hi Hello
+
+# Введите строку: Oh, no!!!
+# Oh, no
