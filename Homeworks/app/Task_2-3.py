@@ -22,7 +22,7 @@ def switch_it_up(number):
         9: 'девять'
     }
 
-    return digits_dict.get(number, 'Такой цифры нет, это уже число')
+    return digits_dict.get(number)
 
 # Например:
 number = int(input("Введите цифру от 0 до 9: "))

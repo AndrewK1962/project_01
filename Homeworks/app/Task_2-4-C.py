@@ -27,7 +27,7 @@ def remove_words_with_one_em(s):
     return new_sentence.strip()
 
 # Например:
-s = "Hi! !Hi! Hi!"
+s = input("Введите предложение содержащее слова с восклицательными знаками:")
 new_sentence = remove_words_with_one_em(s) # новое получившееся предложение
 print(f"Кажется, предложение ",'"', s, '"', " содержало слова с одним восклицательным знаком.", sep='')
 print("Мы их удалили, новое предложение: ",'"', new_sentence,'"', sep='')
