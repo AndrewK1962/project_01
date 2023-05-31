@@ -166,7 +166,7 @@ df = pd.read_sql('SELECT Students.Student_name, Cars.Car FROM Students JOIN Cars
 print (df)
 df.to_excel('Task6.xlsx', index = False)
 
-# Задача 7
+# пример соединения с БД
 import pandas as pd
 import requests
 
